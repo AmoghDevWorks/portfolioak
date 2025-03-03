@@ -4,6 +4,7 @@ import './index.css';
 import Header from './components/Header';
 import App from './components/App';
 import About from './components/About';
+import Skill from './components/Skill';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <Header />
     <App />
     <About />
+    <Skill />
   </React.StrictMode>
 );
 
