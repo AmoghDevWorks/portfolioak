@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import UnderlineButton from './HeaderBtn'
-import logo from '../utils/logo.png'
+import logo from '../images/logo.png'
 
 const Header = () => {
 
