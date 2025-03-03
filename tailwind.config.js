@@ -9,6 +9,9 @@ module.exports = {
         customgrey: '#2D3854',
         customblue: '#00CCFF',
       },
+      boxShadow: {
+        'custom': '1px 1px 4px #00CCFF', // Custom shadow
+      }
     },
   },
   plugins: [],
