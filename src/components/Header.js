@@ -14,7 +14,7 @@ const Header = () => {
     }, []);
 
   return (
-    <div className='w-screen h-16 bg-customgrey border-b-[1px] border-solid border-gray-200 flex items-center justify-between'>
+    <div className='max-w-screen h-16 bg-customgrey border-b-[1px] border-solid border-gray-200 flex items-center justify-between'>
       <div className=''>
         <img src={logo} alt='logo' className='h-12 ml-4 '/>
       </div>
