@@ -2,7 +2,7 @@ import React from "react";
 
 const LinkedInButton = () => {
   return (
-    <button className="w-12 h-12 flex items-center justify-center rounded-lg bg-transparent border border-gray-500 relative overflow-hidden group transition-all duration-300">
+    <button onClick={() => { window.open('https://www.linkedin.com/in/amogh-kashyap-s-n-20a13a2a5/', '_blank', 'noopener,noreferrer'); }} className="w-12 h-12 flex items-center justify-center rounded-lg bg-transparent border border-gray-500 relative overflow-hidden group transition-all duration-300">
       {/* Background with hover effect */}
       <span className="absolute inset-0 bg-customblue scale-0 rotate-[-20deg] origin-left transition-transform duration-300 group-hover:scale-100 group-hover:rotate-0"></span>
 

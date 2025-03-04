@@ -2,7 +2,7 @@ import React from "react";
 
 const GithubButton = () => {
   return (
-    <button className="w-12 h-12 flex items-center justify-center rounded-lg bg-transparent border border-gray-500 relative overflow-hidden group transition-all duration-300">
+    <button onClick={() => { window.open('https://github.com/AmoghDevWorks', '_blank', 'noopener,noreferrer'); }} className="w-12 h-12 flex items-center justify-center rounded-lg bg-transparent border border-gray-500 relative overflow-hidden group transition-all duration-300">
       {/* Background with a right tilt effect */}
       <span className="absolute inset-0 bg-customblue scale-0 rotate-[-20deg] origin-left transition-transform duration-300 group-hover:scale-100 group-hover:rotate-0"></span>
 
