@@ -27,6 +27,10 @@ const Header = () => {
           <Link to='projects' smooth={true} duration={500} ><UnderlineButton text={"PROJECTS"}/></Link>
         </ol>
       </div>}
+      {width<=767 && <div>
+          
+        </div>
+      }
     </div>
   )
 }
