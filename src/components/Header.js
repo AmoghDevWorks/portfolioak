@@ -14,7 +14,7 @@ const Header = () => {
     }, []);
 
   return (
-    <div className='max-w-screen h-16 bg-customgrey border-b-[1px] border-solid border-gray-200 flex items-center justify-between'>
+    <div className='w-screen fixed z-50 h-16 bg-customgrey border-b-[1px] border-solid border-gray-200 flex items-center justify-between'>
       <div className=''>
         <img src={logo} alt='logo' className='h-12 ml-4 '/>
       </div>
@@ -22,6 +22,7 @@ const Header = () => {
         <ol className='list-none text-lg font-bold text-white px-0 lg:px-20'>
             <UnderlineButton text={"HOME"}/>
             <UnderlineButton text={"ABOUT"}/>
+            <UnderlineButton text={"SKILLS"}/>
             <UnderlineButton text={"PROJECT"}/>
         </ol>
       </div>}
