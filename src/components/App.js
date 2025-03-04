@@ -4,6 +4,7 @@ import LinkedInButton from '../utils/LinkedInBtn'
 import LeetCodeButton from '../utils/LeetCodeBtn'
 import CodeChefButton from '../utils/CodeChefBtn'
 import logo from '../images/logo.png'
+import ResumeBtn from '../utils/ResumeBtn'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <LeetCodeButton />
           <CodeChefButton />
         </ol>
+        <ResumeBtn />
       </div>
       <div className='w-11/12 lg:w-1/2 flex items-center justify-center'>
         <div className='w-3/4 flex items-center justify-center'>
