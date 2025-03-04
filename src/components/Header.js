@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UnderlineButton from './HeaderBtn'
 import logo from '../images/logo.png'
+import { Link } from "react-scroll";
 
 const Header = () => {
 
@@ -20,10 +21,10 @@ const Header = () => {
       </div>
       {width>767 && <div>
         <ol className='list-none text-lg font-bold text-white px-0 lg:px-20'>
-            <UnderlineButton text={"HOME"}/>
-            <UnderlineButton text={"ABOUT"}/>
-            <UnderlineButton text={"SKILLS"}/>
-            <UnderlineButton text={"PROJECT"}/>
+          <Link to='home' smooth={true} duration={500} ><UnderlineButton text={"HOME"}/></Link>
+          <Link to='about' smooth={true} duration={500} ><UnderlineButton text={"ABOUT"}/></Link>
+          <Link to='skills' smooth={true} duration={500} ><UnderlineButton text={"SKILLS"}/></Link>
+          <Link to='projects' smooth={true} duration={500} ><UnderlineButton text={"PROJECTS"}/></Link>
         </ol>
       </div>}
     </div>

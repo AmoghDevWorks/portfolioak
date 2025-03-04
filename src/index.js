@@ -10,9 +10,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <App />
-    <About />
-    <Skill />
+
+    <section id='home'>  
+        <App />
+    </section>
+
+    <section id='about'>
+      <About />
+    </section>
+
+    <section id='skills'>
+      <Skill />
+    </section>
+    
+    
   </React.StrictMode>
 );
 
