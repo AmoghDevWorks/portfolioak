@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import UnderlineButton from './HeaderBtn'
 import logo from '../images/logo.png'
 import { Link } from "react-scroll";
+import HamburgerMenu from '../utils/Hamburger';
 
 const Header = () => {
 
@@ -27,8 +28,8 @@ const Header = () => {
           <Link to='projects' smooth={true} duration={500} ><UnderlineButton text={"PROJECTS"}/></Link>
         </ol>
       </div>}
-      {width<=767 && <div>
-          
+      {width<=767 && <div className='px-6 '>
+          <HamburgerMenu />
         </div>
       }
     </div>

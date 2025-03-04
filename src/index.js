@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "remixicon/fonts/remixicon.css";
 import Header from './components/Header';
 import App from './components/App';
 import About from './components/About';
