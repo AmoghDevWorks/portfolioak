@@ -5,8 +5,15 @@ import LeetCodeButton from '../utils/LeetCodeBtn'
 import CodeChefButton from '../utils/CodeChefBtn'
 import logo from '../images/logo.png'
 import ResumeBtn from '../utils/ResumeBtn'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const App = () => {
+
+  useGSAP(()=>{
+    const tl = gsap.timeline()
+  })
+
   return (
     <div className='bg-customgrey min-h-[100vh] flex items-center justify-around flex-col lg:flex-row lg:px-20 py-24 md:py-32'>
       <div className='lg:w-1/2 w-11/12'>
