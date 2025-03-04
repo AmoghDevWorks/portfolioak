@@ -7,6 +7,7 @@ import App from './components/App';
 import About from './components/About';
 import Skill from './components/Skill';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +30,10 @@ root.render(
       <Projects />
     </section>
     
+    <section id='contact'>
+      <Contact />
+    </section>
+
   </React.StrictMode>
 );
 

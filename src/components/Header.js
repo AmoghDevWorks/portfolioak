@@ -26,6 +26,7 @@ const Header = () => {
           <Link to='about' smooth={true} duration={500} ><UnderlineButton text={"ABOUT"}/></Link>
           <Link to='skills' smooth={true} duration={500} ><UnderlineButton text={"SKILLS"}/></Link>
           <Link to='projects' smooth={true} duration={500} ><UnderlineButton text={"PROJECTS"}/></Link>
+          <Link to='contact' smooth={true} duration={500} ><UnderlineButton text={"CONTACT"}/></Link>
         </ol>
       </div>}
       {width<=767 && <div className='px-6 '>

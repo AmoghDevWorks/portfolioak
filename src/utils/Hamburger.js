@@ -33,7 +33,7 @@ const HamburgerMenu = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: "-100%", opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="flex flex-col space-y-6 text-white text-2xl items-center mt-[-300px]" // Move links upwards
+              className="flex flex-col space-y-6 text-white text-2xl items-center mt-[-200px]" // Move links upwards
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside menu
             >
               <Link to="home" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
@@ -47,6 +47,9 @@ const HamburgerMenu = () => {
               </Link>
               <Link to="projects" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
                 <UnderlineButton text={"PROJECTS"} />
+              </Link>
+              <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+                <UnderlineButton text={"CONTACT"} />
               </Link>
             </motion.div>
           </motion.div>
