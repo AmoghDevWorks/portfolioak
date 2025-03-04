@@ -6,7 +6,7 @@ import CodeChefButton from '../utils/CodeChefBtn'
 
 const App = () => {
   return (
-    <div className='bg-customgrey min-h-[90vh] flex items-center justify-between px-20'>
+    <div className='bg-customgrey min-h-[100vh] flex items-center justify-between px-20'>
       <div className='w-1/2'>
         <h2 className='text-3xl font-semibold text-white'>&nbsp;Hello, I'm</h2>
         <h2 className='font-bold my-3 text-6xl text-customblue'>Amogh Kashyap S N</h2>
