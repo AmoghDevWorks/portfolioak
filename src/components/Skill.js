@@ -3,6 +3,10 @@ import htmlLogo from '../images/htmlLogo.png'
 import cssLogo from '../images/cssLogo.png'
 import jsLogo from '../images/jsLogo.png'
 import cppLogo from '../images/cppLogo.png'
+import reactLogo from '../images/reactLogo.png'
+import gitLogo from '../images/gitLogo.png'
+import githubLogo from '../images/githubLogo.png'
+import tailwindLogo from '../images/tailwindLogo.png'
 
 const language = [
   {
@@ -23,6 +27,25 @@ const language = [
   }
 ]
 
+const toolsLibraries = [
+  {
+    imgUrl: reactLogo,
+    text: "React"
+  },
+  {
+    imgUrl: gitLogo,
+    text: "Git"
+  },
+  {
+    imgUrl: githubLogo,
+    text: "GitHub"
+  },
+  {
+    imgUrl: tailwindLogo,
+    text: "Tailwind"
+  }
+]
+
 const Skill = () => {
   return (
     <div className='bg-customgrey max-w-screen h-fit py-20 px-6 flex items-center justify-center'>
@@ -33,7 +56,18 @@ const Skill = () => {
                 <div className='flex items-center justify-evenly'>
                     {language.map((lang)=>(
                         <div className='h-1/2 flex items-center justify-center flex-col'>
-                            <img src={lang.imgUrl} alt='html logo' className='rounded-md h-28 my-4' />
+                            <img src={lang.imgUrl} alt='logo' className='rounded-md h-24 my-4' />
+                            <p className='font-semibold text-xl'>{lang.text}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className='my-4 p-10'>
+                <h3 className='text-2xl mb-4 font-bold text-customblue'>Tools & Libraries</h3>
+                <div className='flex items-center justify-evenly'>
+                    {toolsLibraries.map((lang)=>(
+                        <div className='h-1/2 flex items-center justify-center flex-col'>
+                            <img src={lang.imgUrl} alt='logo' className='rounded-md h-24 my-4' />
                             <p className='font-semibold text-xl'>{lang.text}</p>
                         </div>
                     ))}
