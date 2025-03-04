@@ -1,21 +1,42 @@
 import React, { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ContactForm = () => {
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
 
+  useGSAP(() => {
+    gsap.from(".contact-content", {
+      x: 20, // Moves in from the right
+      opacity: 0, // Starts invisible
+      duration: 1.5, // Animation duration
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".contact-content",
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none none",
+        scrub: 1
+      }
+    });
+  });
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const recipientEmail = 'amoghkashyapsn2005@gmail.com'
+    const recipientEmail = "amoghkashyapsn2005@gmail.com";
     const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
-    setTitle('')
-    setMessage('')
+    setTitle("");
+    setMessage("");
   };
 
   return (
     <div className="bg-customgrey max-w-screen h-fit py-20 px-6 flex items-center justify-center">
-      <div className="h-fit p-5 w-full md:w-2/3 shadow-custom rounded-lg text-white">
+      <div className="contact-content h-fit p-5 w-full md:w-2/3 shadow-custom rounded-lg text-white">
         <h1 className="text-4xl text-customblue mb-5">
           ➢&nbsp;
           <span className="text-white font-bold underline underline-offset-8 decoration-customblue decoration-[2px]">

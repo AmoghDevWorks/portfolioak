@@ -54,7 +54,7 @@ const Header = () => {
           <Link to='contact' smooth={true} duration={500} ><UnderlineButton text={"CONTACT"}/></Link>
         </ol>
       </div>}
-      {width<=767 && <div id='hamburger' className='px-6 '>
+      {width<=767 && <div id='hamburger' className='px-6 overflow-hidden'>
           <HamburgerMenu />
         </div>
       }
