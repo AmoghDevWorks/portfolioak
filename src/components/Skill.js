@@ -42,35 +42,53 @@ const toolsLibraries = [
   },
   {
     imgUrl: tailwindLogo,
-    text: "Tailwind"
+    text: "Tailwind CSS"
   }
 ]
 
 const Skill = () => {
   return (
     <div className='bg-customgrey max-w-screen h-fit py-20 px-6 flex items-center justify-center'>
-        <div className='h-fit p-4 w-2/3 shadow-custom rounded-lg text-white'>
+        <div className='h-fit p-5 w-2/3 shadow-custom rounded-lg text-white'>
             <h1 className='text-4xl text-customblue mb-5'>➢&nbsp;<span className='text-white font-bold underline underline-offset-8 decoration-customblue decoration-[2px]'>SKILLS</span></h1>
-            <div className='my-4 p-10'>
+            <div className='my-4 px-10 py-4'>
                 <h3 className='text-2xl mb-4 font-bold text-customblue'>Languages</h3>
                 <div className='flex items-center justify-evenly'>
-                    {language.map((lang)=>(
-                        <div className='h-1/2 flex items-center justify-center flex-col'>
-                            <img src={lang.imgUrl} alt='logo' className='rounded-md h-24 my-4' />
-                            <p className='font-semibold text-xl'>{lang.text}</p>
-                        </div>
-                    ))}
+                  {language.map((lang) => (
+                    <div className="h-1/2 flex items-center justify-center flex-col group">
+                      {/* Image with Reduced Initial Size & Smooth Scale-Up on Hover */}
+                      <img 
+                        src={lang.imgUrl} 
+                        alt="logo" 
+                        className="rounded-md h-24 my-4 transition-transform duration-300 transform scale-90 group-hover:scale-100"
+                      />
+
+                      {/* Text Initially Hidden, Appears on Hover with Animation */}
+                      <p className="font-semibold text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {lang.text}
+                      </p>
+                    </div>
+                  ))}
                 </div>
             </div>
-            <div className='my-4 p-10'>
+            <div className='my-4 px-10 py-4'>
                 <h3 className='text-2xl mb-4 font-bold text-customblue'>Tools & Libraries</h3>
                 <div className='flex items-center justify-evenly'>
-                    {toolsLibraries.map((lang)=>(
-                        <div className='h-1/2 flex items-center justify-center flex-col'>
-                            <img src={lang.imgUrl} alt='logo' className='rounded-md h-24 my-4' />
-                            <p className='font-semibold text-xl'>{lang.text}</p>
-                        </div>
-                    ))}
+                  {toolsLibraries.map((lang) => (
+                    <div className="h-1/2 flex items-center justify-center flex-col group">
+                      {/* Image with Reduced Initial Size & Smooth Scale-Up on Hover */}
+                      <img 
+                        src={lang.imgUrl} 
+                        alt="logo" 
+                        className="rounded-md h-24 my-4 transition-transform duration-300 transform scale-90 group-hover:scale-100"
+                      />
+
+                      {/* Text Initially Hidden, Appears on Hover with Animation */}
+                      <p className="font-semibold text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {lang.text}
+                      </p>
+                    </div>
+                  ))}
                 </div>
             </div>
         </div>
