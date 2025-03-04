@@ -5,6 +5,7 @@ import Header from './components/Header';
 import App from './components/App';
 import About from './components/About';
 import Skill from './components/Skill';
+import Projects from './components/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,9 @@ root.render(
       <Skill />
     </section>
     
+    <section id='projects'>
+      <Projects />
+    </section>
     
   </React.StrictMode>
 );
