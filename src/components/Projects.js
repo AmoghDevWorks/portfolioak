@@ -8,19 +8,19 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const projectInfo = [
     {
-      title: 'Netflix Clone',
-      techstack: ['Firebase', 'React', 'Tailwind CSS'],
-      url: 'https://netflix-e4a5a.web.app/',
-    },
-    {
-      title: 'Spotify Clone',
-      techstack: ['Firebase', 'React', 'Tailwind CSS'],
-      url: 'https://spotifyclone123123.netlify.app/',
+      title: 'Portfolio',
+      techstack: ['React', 'Tailwind CSS'],
+      url: 'https://portfolioak-five.vercel.app/',
     },
     {
       title: 'Contributor to WIE 2024-25 website',
-      techstack: ['React', 'GSAP'],
+      techstack: ['React', 'GSAP', 'NodeJS'],
       url: 'https://github.com/ieeesitsb/wiecode2024-25',
+    },
+    {
+      title: 'Ayusmitra',
+      techstack: [ 'React', 'Tailwind CSS', 'ExpressJS', 'MongoDB'],
+      url: 'https://github.com/AmoghDevWorks/hospital',
     },
   ];
 
